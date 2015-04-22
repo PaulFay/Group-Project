@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.bochi91.multicalendar.AppointmentDetailsActivity"
+    android:background="#0096FF"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your Appointment"
+        android:id="@+id/txh"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Type: "
+        android:id="@+id/txt"
+        android:layout_below="@+id/txh"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Large Text"
+        android:id="@+id/txat"
+        android:textColor="#FFFFFF"
+        android:layout_alignBottom="@+id/txt"
+        android:layout_toEndOf="@+id/txs" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:text="Location: "
+        android:id="@+id/txl"
+        android:layout_below="@+id/txt"
+        android:layout_alignStart="@+id/txt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Large Text"
+        android:textColor="#FFFFFF"
+        android:id="@+id/txlt"
+        android:layout_alignBottom="@+id/txl"
+        android:layout_alignStart="@+id/txat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Start time: "
+        android:id="@+id/txs"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/txl"
+        android:layout_alignStart="@+id/txl"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Large Text"
+        android:id="@+id/txst"
+        android:textColor="#FFFFFF"
+        android:layout_alignBottom="@+id/txs"
+        android:layout_alignStart="@+id/txlt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="End time: "
+        android:id="@+id/txe"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/txs"
+        android:layout_alignStart="@+id/txs" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Large Text"
+        android:textColor="#FFFFFF"
+        android:id="@+id/txet"
+        android:layout_alignBottom="@+id/txe"
+        android:layout_alignStart="@+id/txst" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date: "
+        android:textColor="#FFFFFF"
+        android:id="@+id/txd"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/txe" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Large Text"
+        android:id="@+id/txdt"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/txde"
+        android:layout_alignStart="@+id/txet" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Details: "
+        android:textColor="#FFFFFF"
+        android:id="@+id/txde"
+        android:layout_below="@+id/txd"
+        android:layout_alignStart="@+id/txd"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Large Text"
+        android:textColor="#FFFFFF"
+        android:id="@+id/txdet"
+        android:layout_alignTop="@+id/txde"
+        android:layout_alignStart="@+id/txdt" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:background="#FFFFFF"
+        android:id="@+id/exbut"
+        android:layout_below="@+id/txde"
+        android:layout_alignStart="@+id/txe"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>

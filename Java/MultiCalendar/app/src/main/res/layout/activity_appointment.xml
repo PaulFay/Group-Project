@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.bochi91.multicalendar.AppointmentActivity"
+
+    android:layout_weight="1"
+    android:background="#0096FF">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Date goes here"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateDisplay"/>
+
+    <TextView
+        android:text="Start Time"
+        android:textColor="#FFFFFF"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateDisplay"
+        android:id="@+id/startLabel"/>
+
+    <TimePicker
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startLabel"
+        android:id="@+id/startTime"></TimePicker>
+
+    <TextView
+        android:text="End Time"
+        android:textColor="#FFFFFF"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startTime"
+        android:id="@+id/endLabel"/>
+
+    <TimePicker
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/endLabel"
+        android:id="@+id/endTime"></TimePicker>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/endTime"
+        android:id="@+id/row1">
+
+        <TextView
+            android:text="Type"
+            android:textColor="#FFFFFF"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:textColor="#FFFFFF"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/type"></Spinner>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/row1"
+        android:id="@+id/row2">
+
+        <TextView
+            android:text="Location"
+            android:textColor="#FFFFFF"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:textColor="#FFFFFF"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/inputLocation"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/row2"
+        android:id="@+id/row3">
+
+        <TextView
+            android:text="Details"
+            android:textColor="#FFFFFF"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+
+            android:id="@+id/inputDetails"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/row2"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/row3"
+        android:background="#FFFFFF"
+
+        android:text="Add Appointment"
+        android:onClick="onAddClicked"/>
+</RelativeLayout>
+</ScrollView>
+
+
+
